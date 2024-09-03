@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+  .video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -200;
+    overflow: hidden;
+  }
+  
+  #background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+  }
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+  .logos{
+    display: flex;
+}
+
+.logo img{
+    height: 5rem;
+    width: 6rem;
+    object-fit: cover;
+    padding: 1rem;
+}
+
+.logo{
+    height: 5rem;
+    width: 6rem;
+}
+
+.logo1 img{
+    height: 5rem;
+    width: 6rem;
+    object-fit: cover;
+    padding:1rem;
+}
+
+.logo1{
+    height: 6rem;
+    width: 6rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(34, 33, 33);
+    height: 5rem;
+    z-index: 100;
+    position: fixed;    
+}
+
+#nav-dropdown{
+    display: none;
+}
+
+.option{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-right: 1rem;  
+}
+
+.option a{
+    text-decoration: none;
+    color: rgb(151, 147, 147);
+}
+
+.option a:hover{
+    text-decoration:underline;
+    color: rgb(205, 202, 202);
+}
+
+@media only screen and (max-width: 700px) {
+    
+        nav{
+            display: flex; 
+            height: 6rem;
+            position: fixed; 
+            z-index: 100;
+        }
+
+        .logo{
+           margin: 1rem;
+        }
+
+        .logo1{
+          margin: 0.5rem;
+       }
+
+        .option{
+            display: none;
+        }
+
+        #nav-dropbtn {
+            background-color: #3c6981;
+            color: white;
+            padding: 15px;
+            font-size: 16px;
+            border: none;
+            border-radius: 15px;
+          }
+          
+          #nav-dropdown {
+            display: block;
+             margin: 2rem;
+             margin-right: 5rem;
+             padding-bottom: 10rem;
+             margin-right: 150px;
+             width: 0px;
+          }
+          
+          #nav-dropdownContent {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        
+          }
+          
+          #nav-dropdownContent a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+
+          
+          #nav-dropdownContent a:hover {background-color: #ddd;}
+          
+          #nav-dropdown:hover #nav-dropdownContent {display: block;}
+          
+          #nav-dropdown:hover #nav-dropbtn {background-color: #23485d;}
+              
+}
+
+#section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap ;
+}
+
+img{
+  border-radius: 2rem;
+}
+
+@media only screen and (max-width: 700px) {
+  #section{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+footer .svg{
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+}
+
+footer .svg svg{
+  height: 100px;
+  width: 100px;
+}
+
+@media only screen and (max-width: 700px) {
+  footer .col{
+      text-align: center !important;
+  }
+
+  footer .svg svg{
+      height: 50px;
+      width: 50px;
+  }
+  footer .svg{
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 350px){
+    
+  .logo img{
+      height: 4rem;
+      width: 5rem;
+      object-fit: cover;
+      padding: 1rem;
+  }
+  
+  .logo{
+      height: 4rem;
+      width: 5rem;
+  }
+  
+  .logo1 img{
+      height: 4rem;
+      width: 5rem;
+      object-fit: cover;
+      padding:1rem;
+      margin-top: 5px;
+  }
+  
+  .logo1{
+      height: 5rem;
+      width: 5rem;
+  }
+
+  .dropdown {
+      display: block;  
+      margin-right: 170px;
+     
+    }
+    
+    .dropdown-content {
+      font-size: 15px;
+    }
+
+    .dropdown-content a {
+      font-size: 15px;
+    }
+} 
